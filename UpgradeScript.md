@@ -10,7 +10,7 @@
     1. Don't worry about the 'alpha' naming
 1. Extract the archive locally
 1. Run API Port on the binary output of the web app
-    1. `ApiPort.exe analyze -t .NET -r html -r excel -f D:\source\MJRousos\UpgradeSample\src\eShopLegacyMVC\bin`
+    1. `ApiPort.exe analyze -t .NET -t ".NET Standard" -r html -r excel -f D:\source\MJRousos\UpgradeSample\src\eShopLegacyMVC\bin`
 1. Review the portability reports
     1. Notice that log4net is not 100% compatible, but that's ok because we can search NuGet.org and find a compatible version of the library
 
