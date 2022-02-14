@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopLegacyMVC", "src\eShopLegacyMVC\eShopLegacyMVC.csproj", "{C4E50A92-30E2-4592-9A9A-A9D2B1B13A7E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopLegacyMVC", "eShopLegacyMVC\eShopLegacyMVC.csproj", "{C4E50A92-30E2-4592-9A9A-A9D2B1B13A7E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopLegacy.Utilities", "eShopLegacy.Utilities\eShopLegacy.Utilities.csproj", "{D466562E-F48C-4EF1-AE08-3A80B0ED9671}"
 EndProject
