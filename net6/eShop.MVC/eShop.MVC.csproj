@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+   <TargetFramework>net6.0</TargetFramework>
+   <ImplicitUsings>enable</ImplicitUsings>
+   <RootNamespace>eShopLegacyMVC</RootNamespace>
+	<EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+	  <PackageReference Include="EntityFramework" Version="6.4.4" />
+	  <PackageReference Include="LigerShark.WebOptimizer.Core" Version="3.0.357" />
+	  <PackageReference Include="log4net" Version="2.0.14" />
+  </ItemGroup>
+	
+  <!-- Make sure scripts, content, setup, infrastructure, and pics are available in content root for consumption at runtime -->
+  <ItemGroup>
+	<None Remove="Pics\*.png" />
+    <Content Include="Pics\*.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+
+	<None Remove="Scripts\*.*" />
+	<Content Include="Scripts\*.*">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</Content>
+	  
+	<None Remove="Content\*.*" />
+	<Content Include="Content\*.*">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</Content>
+
+	<None Remove="Setup\*.*" />
+	<Content Include="Setup\*.*">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</Content>
+
+	<None Remove="Models\Infrastructure\*.*" />
+	<Content Include="Models\Infrastructure\*.*">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\eShop.Utilities\eShop.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>
