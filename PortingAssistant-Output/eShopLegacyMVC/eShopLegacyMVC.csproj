@@ -1,0 +1,108 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.12" />
+    <PackageReference Include="Autofac" Version="4.9.2" />
+    <PackageReference Include="bootstrap" Version="4.4.0" />
+    <PackageReference Include="EntityFramework" Version="6.3.0" />
+    <PackageReference Include="jQuery" Version="3.4.0" />
+    <PackageReference Include="jQuery.Validation" Version="1.19.1" />
+    <PackageReference Include="log4net" Version="2.0.9" />
+    <PackageReference Include="Microsoft.ApplicationInsights" Version="2.10.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.DependencyCollector" Version="2.9.1" />
+    <PackageReference Include="Microsoft.ApplicationInsights.PerfCounterCollector" Version="2.9.1" />
+    <PackageReference Include="Microsoft.ApplicationInsights.Web" Version="2.9.1" />
+    <PackageReference Include="Microsoft.ApplicationInsights.WindowsServer" Version="2.9.1" />
+    <PackageReference Include="Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel" Version="2.10.0" />
+    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="1.1.1" />
+    <PackageReference Include="Microsoft.jQuery.Unobtrusive.Validation" Version="3.2.12" />
+    <PackageReference Include="Microsoft.Net.Compilers" Version="3.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Pipelines.Sockets.Unofficial" Version="1.0.9" />
+    <PackageReference Include="popper.js" Version="1.16.0" />
+    <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="5.0.0" />
+    <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="4.6.0" />
+    <PackageReference Include="System.IO.Pipelines" Version="4.5.2" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.6.0" />
+    <PackageReference Include="System.Threading.Channels" Version="4.6.0" />
+    <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eShopLegacy.Utilities\eShopLegacy.Utilities.csproj" />
+  </ItemGroup>
+  <ItemGroup Label="PortingInfo">
+  <!-- DO NOT REMOVE WHILE PORTING
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Autofac.4.9.1\lib\net45\Autofac.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Autofac.Mvc5.4.0.2\lib\net45\Autofac.Integration.Mvc.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Autofac.WebApi2.4.3.1\lib\net45\Autofac.Integration.WebApi.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\log4net.2.0.8\lib\net45-full\log4net.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.4.0\lib\net45\Microsoft.AI.Agent.Intercept.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Microsoft.ApplicationInsights.DependencyCollector.2.9.0\lib\net45\Microsoft.AI.DependencyCollector.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.9.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.9.1\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Microsoft.ApplicationInsights.Web.2.9.0\lib\net45\Microsoft.AI.Web.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Microsoft.ApplicationInsights.WindowsServer.2.9.0\lib\net45\Microsoft.AI.WindowsServer.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Microsoft.ApplicationInsights.2.9.1\lib\net46\Microsoft.ApplicationInsights.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Microsoft.AspNet.SessionState.SessionStateModule.1.1.0\lib\Net462\Microsoft.AspNet.SessionState.SessionStateModule.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Microsoft.AspNet.TelemetryCorrelation.1.0.5\lib\net45\Microsoft.AspNet.TelemetryCorrelation.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Microsoft.CSharp.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Pipelines.Sockets.Unofficial.1.0.7\lib\net472\Pipelines.Sockets.Unofficial.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.ComponentModel.DataAnnotations.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Configuration.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.DataSetExtensions.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\System.Diagnostics.DiagnosticSource.4.7.1\lib\net46\System.Diagnostics.DiagnosticSource.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\System.Diagnostics.PerformanceCounter.4.5.0\lib\net461\System.Diagnostics.PerformanceCounter.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Drawing.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.EnterpriseServices.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.IO.Compression.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.IO.Compression.FileSystem.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Facades\System.IO.Compression.ZipFile.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\System.IO.Pipelines.4.5.1\lib\netstandard2.0\System.IO.Pipelines.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Management.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.WebRequest.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Numerics.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Runtime.Caching.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\System.Threading.Channels.4.5.0\lib\netstandard2.0\System.Threading.Channels.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\System.Threading.Tasks.Extensions.4.5.2\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Web.Abstractions.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Web.ApplicationServices.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Web.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Web.DynamicData.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Web.Entity.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Web.Extensions.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Web.Routing.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Web.Services.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.dll
+  D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\packages\WebGrease.1.6.0\lib\WebGrease.dll
+  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Facades\netstandard.dll
+  -->
+  </ItemGroup>
+</Project>

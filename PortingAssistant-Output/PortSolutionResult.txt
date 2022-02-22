@@ -1,0 +1,124 @@
+==========
+References
+==========
+eShopLegacyMVC
+<global namespace>
+eShopLegacyMVC.Controllers
+eShopLegacyMVC.Services
+eShopLegacyMVC.ViewModel
+eShopLegacyMVC.Models
+eShopLegacyMVC.Modules
+eShopLegacyMVC.Models.Infrastructure
+eShopLegacyMVC.Controllers.Api
+eShopLegacyMVC.Controllers.WebApi
+System
+System.Collections.Generic
+System.Linq
+System.Threading.Tasks
+Microsoft.AspNetCore.Hosting
+Microsoft.Extensions.Configuration
+Microsoft.Extensions.Hosting
+Microsoft.Extensions.Logging
+Microsoft.AspNetCore.Builder
+Microsoft.AspNetCore.HttpsPolicy
+Microsoft.AspNetCore.Mvc
+Microsoft.Extensions.DependencyInjection
+System.Net
+log4net
+Microsoft.AspNetCore.Mvc.Rendering
+System.IO
+System.Web
+System.ComponentModel.DataAnnotations.Schema
+System.Data.Entity.ModelConfiguration
+Microsoft.EntityFrameworkCore
+System.ComponentModel
+System.ComponentModel.DataAnnotations
+Autofac
+eShopLegacy.Utilities
+System.Net.Http
+System.Runtime.Remoting.Messaging
+System.Configuration
+System.Globalization
+System.IO.Compression
+System.Text.RegularExpressions
+System.Web.Hosting
+System.Reflection
+project.all
+System.Runtime
+System.Runtime.Serialization
+System.Runtime.Serialization.Formatters
+eShopLegacy
+System.Runtime.Serialization.Formatters.Binary
+
+===============
+DownloadedFiles
+===============
+project.all.json
+system.configuration.json
+system.web.json
+
+==============
+ProjectResults
+==============
+----------------------
+Showing results for: D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\eShopLegacy.Utilities\eShopLegacy.Utilities.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net6.0
+---------------------------
+Upgrade packages:
+---------------------------
+---------------------------
+Action packages:
+---------------------------
+
+----------------------
+Showing results for: D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\eShopLegacyMVC\eShopLegacyMVC.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net6.0
+---------------------------
+Upgrade packages:
+---------------------------
+---------------------------
+Action packages:
+---------------------------
+
+----------------------
+Showing results for: D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\eShopLegacyMVC\eShopLegacyMVC.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net6.0
+---------------------------
+Upgrade packages:
+---------------------------
+---------------------------
+Action packages:
+---------------------------
+
+----------------------
+Showing results for: D:\source\MJRousos\UpgradeSample\PortingAssistant-Output\eShopLegacy.Utilities\eShopLegacy.Utilities.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net6.0
+---------------------------
+Upgrade packages:
+---------------------------
+---------------------------
+Action packages:
+---------------------------
+
+
+===========
+BuildErrors
+===========
+
+
