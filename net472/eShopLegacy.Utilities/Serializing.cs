@@ -18,7 +18,7 @@ namespace eShopLegacy.Utilities
         {
             var binaryFormatter = new BinaryFormatter();
             stream.Seek(0, SeekOrigin.Begin);
-            return binaryFormatter.Deserialize(stream);
+            return binaryFormatter.UnsafeDeserialize(stream, null);
         }
     }
 }
