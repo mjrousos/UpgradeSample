@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopLegacy.Utilities", "eS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopLegacy.Common", "eShopLegacy.Common\eShopLegacy.Common.csproj", "{C06AFEF4-F9EA-4C92-9A4F-335529727BC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopLegacyMVCCore", "eShopLegacyMVCCore\eShopLegacyMVCCore.csproj", "{A6633E81-A4A6-44D9-B64E-9FFFE55F3E92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C06AFEF4-F9EA-4C92-9A4F-335529727BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C06AFEF4-F9EA-4C92-9A4F-335529727BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C06AFEF4-F9EA-4C92-9A4F-335529727BC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6633E81-A4A6-44D9-B64E-9FFFE55F3E92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6633E81-A4A6-44D9-B64E-9FFFE55F3E92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6633E81-A4A6-44D9-B64E-9FFFE55F3E92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6633E81-A4A6-44D9-B64E-9FFFE55F3E92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

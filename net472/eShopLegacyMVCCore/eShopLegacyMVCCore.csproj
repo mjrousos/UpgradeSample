@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Pics\*.png" />
+    <Content Include="Pics\*.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="log4net" Version="2.0.14" />
+    <PackageReference Include="Microsoft.AspNetCore.SystemWebAdapters" Version="1.0.0-preview.3.22370.2" />
+    <PackageReference Include="Microsoft.AspNetCore.SystemWebAdapters.SessionState" Version="1.0.0-preview.3.22370.2" />
+    <PackageReference Include="Yarp.ReverseProxy" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\eShopLegacy.Common\eShopLegacy.Common.csproj" />
+  </ItemGroup>
+
+</Project>

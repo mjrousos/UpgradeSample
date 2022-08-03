@@ -29,6 +29,9 @@
     <TargetFrameworkProfile />
     <Use64BitIISExpress />
     <TypeScriptToolsVersion>4.4</TypeScriptToolsVersion>
+    <_MigrationKind>yarp</_MigrationKind>
+    <_MigrateToProjectPath>..\eShopLegacyMVCCore\eShopLegacyMVCCore.csproj</_MigrateToProjectPath>
+    <_MigrateToProjectGuid>a6633e81-a4a6-44d9-b64e-9fffe55f3e92</_MigrateToProjectGuid>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
