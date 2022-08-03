@@ -19,8 +19,14 @@
 }
 .esh-header-brand {
     max-width: 1440px;
-    margin-left: auto;
+    margin-left: 1rem;
     margin-right: auto;
+}
+
+.esh-header-brand-right {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: 1rem;
 }
 
 .esh-header-title {
@@ -40,6 +46,7 @@
 /* Footer */
 .esh-app-footer {
     background-color: #000000;
+    color: #888888;
     border-top: 1px solid #EEEEEE;
     margin-top: 2.5rem;
     padding-bottom: 2.5rem;

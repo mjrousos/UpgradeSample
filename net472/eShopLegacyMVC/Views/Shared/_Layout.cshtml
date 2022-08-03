@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using eShopLegacy.Utilities
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -13,11 +14,16 @@
             <a href="@Url.Action("index", "catalog")">
                 <img src="~/images/brand.png" />
             </a>
+            <a class="btn esh-button esh-button-primary" href="@Url.Action("index", "AspNetSession")">Session</a>
+            <a class="btn esh-button esh-button-primary" href="@Url.Action("index", "UserInfo")">User Info</a>
+        </div>
+        <div class="esh-header-brand-right">
+            @Html.Partial("_LoginPartial")
         </div>
     </header>
     <section class="esh-app-hero">
         <div class="container esh-header">
-            <h1 class="esh-header-title" >Catalog manager <span>(MVC)</span></h1>
+            <h1 class="esh-header-title">Catalog manager <span>(MVC)</span></h1>
         </div>
     </section>
 
@@ -34,8 +40,10 @@
                     <br />
                     @{ var sessionInfo = new HtmlString($"{HttpContext.Current.Session["MachineName"]}, {HttpContext.Current.Session["SessionStartTime"]}");}
                     <small>@sessionInfo</small>
+                    <br />
+                    <small>@WebHelper.UserAgent</small>
                 </section>
-                
+
             </article>
         </div>
     </footer>
