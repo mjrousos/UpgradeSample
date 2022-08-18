@@ -250,6 +250,8 @@
     <Compile Include="Controllers\WebApi\FilesController.cs" />
     <Compile Include="Controllers\WebApi\BrandsController.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CatalogDBContext.cs" />
+    <Compile Include="Models\CatalogItemHiLoGenerator.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Infrastructure\CatalogDBInitializer.cs" />
     <Compile Include="Controllers\CatalogController.cs" />
