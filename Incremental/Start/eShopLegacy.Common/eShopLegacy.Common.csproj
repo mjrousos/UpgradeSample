@@ -49,9 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\CatalogBrand.cs" />
-    <Compile Include="Models\CatalogDBContext.cs" />
     <Compile Include="Models\CatalogItem.cs" />
-    <Compile Include="Models\CatalogItemHiLoGenerator.cs" />
     <Compile Include="Models\CatalogType.cs" />
     <Compile Include="Models\SessionDemoModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
