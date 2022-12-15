@@ -1,0 +1,18 @@
+﻿@using System.Security.Claims
+
+@{
+    ViewBag.Title = "User Information";
+}
+
+<h2>User Info</h2>
+<h3>@(User.Identity?.Name??"Anonymous user")</h3>
+@if (User is ClaimsPrincipal principal)
+{
+    <h4>Claims</h4>
+    <ul>
+        @foreach (var c in principal.Claims)
+        {
+            <li>@c.Type: @c.Value</li>
+        }
+    </ul>
+}
