@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Azure.Identity;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration;
 
@@ -8,6 +9,13 @@ namespace eShopLegacyMVC.Models
     {
         public CatalogDBContext() : base("name=CatalogDBContext")
         {
+            var conn = (System.Data.SqlClient.SqlConnection)Database.Connection;
+            var credential = new Azure.Identity.DefaultAzureCredential(new DefaultAzureCredentialOptions
+            {
+                ManagedIdentityClientId = "ClientIdGuidGoesHere"
+            });
+            var token = credential.GetToken(new Azure.Core.TokenRequestContext(new[] { "https://database.windows.net/.default" }));
+            conn.AccessToken = token.Token;
         }
 
         public DbSet<CatalogItem> CatalogItems { get; set; }

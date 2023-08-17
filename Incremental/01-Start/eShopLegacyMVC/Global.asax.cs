@@ -87,6 +87,8 @@ namespace eShopLegacyMVC
             if (!mockData)
             {
                 Database.SetInitializer<CatalogDBContext>(container.Resolve<CatalogDBInitializer>());
+                //var context = new CatalogDBContext();
+                //context.Database.Initialize(false);
             }
         }
 

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNet.Identity;
+﻿using Azure.Identity;
+using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -21,6 +22,13 @@ namespace eShopLegacyMVC.Models
         public ApplicationDbContext()
             : base("IdentityDBContext", throwIfV1Schema: false)
         {
+            var conn = (System.Data.SqlClient.SqlConnection)Database.Connection;
+            var credential = new Azure.Identity.DefaultAzureCredential(new DefaultAzureCredentialOptions
+            {
+                ManagedIdentityClientId = "ClientIdGuidGoesHere"
+            });
+            var token = credential.GetToken(new Azure.Core.TokenRequestContext(new[] { "https://database.windows.net/.default" }));
+            conn.AccessToken = token.Token;
         }
 
         public static ApplicationDbContext Create()
